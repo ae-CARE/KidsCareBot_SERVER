@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Winter-gr/2021_CARE_GEP.git"
+  },
+  "author": "winter-gr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Winter-gr/2021_CARE_GEP/issues"
+  },
+  "homepage": "https://github.com/Winter-gr/2021_CARE_GEP#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
