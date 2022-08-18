@@ -1,26 +1,26 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Nav1 from './components/Nav';
+import Main from './components/Main';
+import Weekly from './components/Weekly';
+import Monthly from './components/Monthly';
+import Videos from './components/Videos';
+
 
 
 function App() {
   return (
     <div>
-      {/*navbar*/}
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home"><h1>ae-Care</h1></Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#Mains">Main</Nav.Link>
-              <Nav.Link href="#Weekly">Weekly</Nav.Link>
-              <Nav.Link href="#Monthly">Monthly</Nav.Link>
-              <Nav.Link href="#Videos">Videos</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <Router>
+        <Nav1/>
+        <Routes>
+          <Route exact path="/component/Main" element={<Main />} />
+          <Route path="/component/Weekly" element={<Weekly />} />
+          <Route path="/component/Monthly" element={<Monthly />} />
+          <Route path="/component/Videos" element={<Videos />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
