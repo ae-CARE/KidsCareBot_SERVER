@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Nav1/>
         <Routes>
-          <Route exact path="/component/Main" element={<Main />} />
+          <Route path="/component/Main" element={<Main />} />
           <Route path="/component/Weekly" element={<Weekly />} />
           <Route path="/component/Monthly" element={<Monthly />} />
           <Route path="/component/Videos" element={<Videos />} />

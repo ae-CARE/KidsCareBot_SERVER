@@ -8,7 +8,7 @@ class Nav1 extends Component {
             <div>
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                     <Container>
-                    <Navbar.Brand href="#home"><h1>ae-Care</h1></Navbar.Brand>
+                    <Navbar.Brand><h1>ae-Care</h1></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
