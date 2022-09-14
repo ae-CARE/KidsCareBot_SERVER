@@ -1,11 +1,14 @@
 import React from 'react';
+import Footer from './Footer';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 function Videos(props) {
     return (
 		<>
-			<h1>Videos.</h1>
+			<Footer/>
 		</>
     );
 }
+
 
 export default Videos;

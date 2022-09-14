@@ -43,3 +43,9 @@
   background-size: cover;
   background-position: center;
 }
+
+.section {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
