@@ -1,11 +1,11 @@
 import React from 'react';
-import Footer from './Footer';
+import Page from './Page';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 function Main(props) {
 	return (
 		<>
-			<Footer/>
+			<Page/>
 		</>
 	);
 };

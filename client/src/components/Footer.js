@@ -76,9 +76,9 @@ function Footer(props) {
 				</MDBContainer>
 
 				<div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-					© 2020 Copyright:
-					<a className='text-white' href='https://mdbootstrap.com/'>
-					MDBootstrap.com
+					© 2022 Copyright:
+					<a className='text-white' href='#!'>
+						응애's.com
 					</a>
 				</div>
 				</MDBFooter>

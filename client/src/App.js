@@ -6,6 +6,7 @@ import Main from './components/Main';
 import Weekly from './components/Weekly';
 import Monthly from './components/Monthly';
 import Videos from './components/Videos';
+import Footer from './components/Footer';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/component/Monthly" element={<Monthly />} />
           <Route path="/component/Videos" element={<Videos />} />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );
