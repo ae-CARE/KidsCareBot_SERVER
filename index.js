@@ -1,9 +1,16 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const path = require("path")
+const port = 3030
 
-app.get('/react', (req, res) => {
-  res.sendFile('/react/build/index.html') // __dirname 필요할 지도..?
+app.use(express.static(path.join(__dirname, "/client/public")));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '/client/public/index.html'))
+})
+
+app.get('/basic', (req, res) => {
+  res.send('Hello World!')
 })
 
 app.listen(port, () => {
